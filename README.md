@@ -18,12 +18,12 @@ Makes it easy to run long-running python programs that does something that you c
   Deploys the necessary infrastructure, like network, ECS cluster etc.
 
 - Add execute permissions for build script
-  `sudo chmod +x build-and-deploy.sh`
+  `sudo chmod +x build-and-run.sh`
 
 - Edit the python scipt in `container/main.py` to suit your needs
 
 - Build container and register with ECR, and run the task
-  `./build-and-deploy.sh`
+  `./build-and-run.sh`
 
 - Add execute permissions for the get-logs script
   `sudo chmod +x get-logs.sh`
