@@ -14,21 +14,27 @@ Makes it easy to run long-running python programs that does something that you c
 - Update CPU and memory in the parameter section of `template.yaml` to suit your needs
 
 - Deploy infra
+
   `sam build && sam deploy`
+
   Deploys the necessary infrastructure, like network, ECS cluster etc.
 
 - Add execute permissions for build script
+
   `sudo chmod +x build-and-run.sh`
 
 - Edit the python scipt in `container/main.py` to suit your needs
 
 - Build container and register with ECR, and run the task
+
   `./build-and-run.sh`
 
 - Add execute permissions for the get-logs script
+
   `sudo chmod +x get-logs.sh`
 
 - Tail the logs of the container
+
   `./get-logs.sh`
 
 > [!WARNING]  
